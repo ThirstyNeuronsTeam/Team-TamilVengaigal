@@ -1,0 +1,22 @@
+.Content {
+  background-image: linear-gradient(red, yellow);
+  font-size: 15px;
+  color: black;
+  border-radius: 25px;
+  padding: 30px;
+
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+
+  transform: rotate(20deg) scale(2) translate(100px, 200px) skew(20deg, 10deg);
+
+  /* border: 10px solid transparent;
+  border-image: url(assets/border.png) 30 round; */
+}
+
+.Title{
+    background-color: #9db013;
+    font-size: 40px;
+    color: black;
+}
+
