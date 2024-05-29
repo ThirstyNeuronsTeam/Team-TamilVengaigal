@@ -1,1 +1,1 @@
-This is Javascript Course Files
+These are Javascript Course Files
