@@ -1,4 +1,6 @@
-function sum(num1,num2){
+
+function
+ sum(num1,num2){
     return num1+num2;
 }
 
@@ -22,11 +24,9 @@ const result = sum(200,36767);
 //Variable Name
 //Function Invoketion
 
-
 function doubleTheLetters(name){
     //count the letters
     const nameLength = name.length;
-
     //take the notebook
     let notebook = "";
     
@@ -35,26 +35,11 @@ function doubleTheLetters(name){
         //take letter
         const letter = name[loopIndex];
         //write twice in the notebook
-        notebook = notebook + letter + letter
+        notebook = notebook + letter.repeat(loopIndex+1)
     }
-
     return notebook
-        //first loop
-           //take first letter
-           //write twice in the notebook
-        //second iteration
-           //take second letter
-           //write twiic in the notebook next to the previuos letter
-        //Third iteration
-          //take third letter
-          //write twiice in the notebook next to the previuos letter
-       // ... till the last letter
 }
 
-
-const result1 = doubleTheLetters("Ram")
+const result1 = doubleTheLetters("Senthil")
 
 console.log(result1);
-
-
-//RRaamm
