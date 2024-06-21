@@ -1,0 +1,40 @@
+Browser
+  Background
+    Background
+      Image
+      Prev(Interactive)
+      Play/Pause(Interactive)
+      Next(Interactive)
+   Background
+      Song Title
+      ProgressBar(Interactive)
+   Baclground
+     Songs
+      Song1
+        Image
+        Title
+        PlayButton(Interactive)
+      Song2(Interactive)
+      ..
+      ..
+      ..
+
+DataType
+
+const songs = [{id:1,name;"hey",songMp3Path:"hey.mp3,coverPhoto:"hey.jpg",title:"hey hey hey},{id:2,name;"summer"},{id:3,name;"ukulele"}]
+
+const currentSong = {
+  index:1.
+  song : songs[1]
+}
+
+const status = "pause"
+
+
+
+
+
+
+
+
+
