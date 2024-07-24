@@ -33,3 +33,19 @@ function splitNameIntoConsonantAndVowels(name) {
 }
 
 console.log(splitNameIntoConsonantAndVowels("Senthil"));
+
+
+function fiscalCode(data){
+
+  const fromName = getCharactersFromName(data.name)
+  const fromSurName = getCharactersFromSurName(data.surname)
+  const fromGender
+  const fromDoB
+
+  return
+
+}
+
+console.log(fiscalCode({name:"sowmiya",surname:"pandian",gender:"F",dob:"04/11/2001"}))
+
+
