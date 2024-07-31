@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+ 
+        let students=[{name:"Senthiil",address:{doorNo:45}},{name:"Ram"},{name:"Panneer"},{name:"Sowmeya"}]
+        function createStudent(){
+            const newStudent = {name:"Selvam",address:{doorNo:45}};
+            
+            const studentsClone = [...students];
+            studentsClone.push(newStudent)
+        
+            students = studentsClone
+            
+            //students.push(newStudent)
+        }
+        function deleteStudent(){
+
+        }
+        function updateStudent(){
+
+
+            students[0].address.doorNo = 55
+
+            //clone array
+            const studentsClone = [...students]
+            //clone student Object
+            const firstObjectClone = {...students[0]}
+            //clone student address
+            const address = {...firstObjectClone.address}
+            firstObjectClone.address = address
+
+            //change 
+            firstObjectClone.name = "Senthil";
+            //move the object to the new array
+            studentsClone[0] = firstObjectClone
+
+            //set new array to top level variable
+            students=studentsClone;
+
+            //clone
+            //change
+            //move 
+            //set
+        
+        }
+        function readStudent(){
+
+        }
+createStudent();
+updateStudent();
+//console.log(students)
+        //1,3,5,7,9,11,13,15,17,19,31    (3+3+3)*3=27    33-3-3  3*3*3=27 3^3=27  s(3!)! 
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
