@@ -1,0 +1,6 @@
+npm create vite@latest  -> to create the project
+
+npm install -> to install all the required libraries in the node modules folder
+(shorcut npm i)
+
+npm run dev (behaves like live server)

@@ -1,4 +1,4 @@
-/* setTimeout(() => {
+setTimeout(() => {
   console.log("A");
   setTimeout(() => {
     console.log("B");
@@ -6,7 +6,7 @@
       console.log("C");
     }, 5000);
   }, 1000);
-}, 3000); */
+}, 3000); 
 
 //fetch promise
 //XMLHttpRequest- event based

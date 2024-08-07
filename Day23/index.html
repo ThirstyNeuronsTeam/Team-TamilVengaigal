@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+      //GET - read
+      //POST - create
+      //DELETE - delete
+      //PUT - update fully
+      //PATCH - update partially
+      const url = "https://jsonplaceholder.typicode.com/todos/1";
+      const oldFetchButNotPromise = new XMLHttpRequest();
+      oldFetchButNotPromise.open("GET", url);
+
+      oldFetchButNotPromise.onerror = () => {
+        console.log("error");
+      };
+
+      oldFetchButNotPromise.onload = (event) => {
+        //console.log("success");
+        //console.log(event.target.response)
+        // const response = event.target.response
+        console.log(oldFetchButNotPromise === event.target);
+        console.log(JSON.parse(oldFetchButNotPromise.response).title);
+
+        const jsonConverted = JSON.parse(oldFetchButNotPromise.response);
+
+        console.log(jsonConverted.userId);
+      };
+
+      oldFetchButNotPromise.send();
+
+      //////////////////////////
+
+      fetch(url)
+        .then((serverData) => {
+          return serverData.json();
+        })
+        .then((x) => console.log(x));
+     ////////////
+
+      axios.get(url).then((response) => {
+        console.log("this data is from AXIOS");
+        console.log(response.data.title);
+      });
+
+    </script>
+  </head>
+  <body></body>
+</html>
