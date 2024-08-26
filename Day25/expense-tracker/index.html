@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="John Doe" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <template id="HistoryTemplate">
+      <div class="History">
+          <span>History</span>
+          <div id="TransactionList" class="TransactionList">
+            
+          </div>
+      </div>
+
+    </template>
+
+    <template id="TransactionTemplate">
+        <div class="Transaxtion">
+            <div class="TransactionDelete">x</div>
+            <div class="TransactionInformation">
+                <span id="reason">Income</span>
+                <span id="value">100000</span>
+            </div>
+            <div class="TransactionTypeIndicator"></div>
+        </div>
+    </template>
+
+    <template id="DashboardTemplate">
+      <div class="Dashboard">
+        <div class="Balance Column">
+          <span>Your Balance</span>
+          <span class="BalanceValue">0.00</span>
+        </div>
+        <div class="IncomeExpenseGroup">
+          <div class="Income Column">
+            <span>Income</span>
+            <span class="IncomeValue">0.00</span>
+          </div>
+          <div class="Expense Column">
+            <span>Expense</span>
+            <span class="ExpenseValue">0.00</span>
+          </div>
+        </div>
+      </div>
+    </template>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
