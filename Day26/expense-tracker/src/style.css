@@ -1,0 +1,85 @@
+#app{
+  background-color: #f7f7f7;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ApplicationWrapper{
+  height: 400px;
+  width: 300px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+
+}
+
+.Dashboard{
+  width: 100%;
+}
+
+.Balance{
+  width: 100%;
+}
+
+
+.Column{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.BalanceValue{
+  color: black;
+  font-weight: 900; 
+  font-size: 2rem;
+}
+
+.IncomeValue{
+  color: #2ecc71;
+}
+
+.ExpenseValue{
+  color: #c0392b;
+}
+
+.IncomeExpenseGroup{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  justify-content: space-around;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.Transaction{
+  display: grid;
+  grid-template-columns: 10% 1fr 1fr 10%;
+  gap:20px;
+}
+
+.GreenIndicator{
+  background-color: #2ecc71;
+  width: 20px;
+  height: 20px;
+}
+
+.RedIndicator{
+  background-color:#c0392b;
+  width: 20px;
+  height: 20px;
+}
+
+.TransactionList{
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+}

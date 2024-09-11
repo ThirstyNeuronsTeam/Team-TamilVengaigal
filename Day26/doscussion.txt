@@ -1,0 +1,12 @@
+Vite - Tool for Project Development
+
+Minification
+Bundling
+
+
+Code Split - Chunks
+Linting
+Formatting
+
+
+Modularization - import and export
